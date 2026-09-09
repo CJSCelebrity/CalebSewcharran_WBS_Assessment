@@ -4,6 +4,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>CalebSewcharran_WBS_Assessment.Api</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
