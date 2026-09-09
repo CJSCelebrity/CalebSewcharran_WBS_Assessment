@@ -1,0 +1,6 @@
+@CalebSewcharran_WBS_Assessment.Api_HostAddress = http://localhost:5289
+
+GET {{CalebSewcharran_WBS_Assessment.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
