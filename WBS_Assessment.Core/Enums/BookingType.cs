@@ -1,4 +1,4 @@
-﻿namespace WBS_Assessment.Core.Enum;
+﻿namespace WBS_Assessment.Core.Enums;
 
 public enum BookingType
 {

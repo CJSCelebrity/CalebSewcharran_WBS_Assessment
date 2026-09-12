@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBS_Assessment.Console", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBS_Assessment.Core", "WBS_Assessment.Core\WBS_Assessment.Core.csproj", "{C1BC4B8C-2B3F-4DF1-B044-EF848C00ED00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBS_Assessment.Application", "WBS_Assessment.Application\WBS_Assessment.Application.csproj", "{098A1BB2-9DE2-478A-B49F-AD000E277FF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{C1BC4B8C-2B3F-4DF1-B044-EF848C00ED00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1BC4B8C-2B3F-4DF1-B044-EF848C00ED00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1BC4B8C-2B3F-4DF1-B044-EF848C00ED00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098A1BB2-9DE2-478A-B49F-AD000E277FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098A1BB2-9DE2-478A-B49F-AD000E277FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098A1BB2-9DE2-478A-B49F-AD000E277FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098A1BB2-9DE2-478A-B49F-AD000E277FF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
