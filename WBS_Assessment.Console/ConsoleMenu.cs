@@ -198,6 +198,9 @@ public class ConsoleMenu(
  
     private static int PromptForIndex(string label, int count)
     {
+        if (count == 0)
+            throw new InvalidOperationException("Nothing available to select.");
+        
         while (true)
         {
             System.Console.Write($"{label} (1-{count}): ");
@@ -206,7 +209,7 @@ public class ConsoleMenu(
             if (input is null)
                 throw new OperationCanceledException("Input stream closed.");
             
-            if (int.TryParse(System.Console.ReadLine(), out var choice)
+            if (int.TryParse(input, out var choice)
                 && choice >= 1 && choice <= count)
                 return choice - 1;
  
@@ -242,7 +245,7 @@ public class ConsoleMenu(
             if (input is null)
                 throw new OperationCanceledException("Input stream closed.");
             
-            if (Guid.TryParse(System.Console.ReadLine(), out var id))
+            if (Guid.TryParse(input, out var id))
                 return id;
  
             System.Console.WriteLine("Not a valid reference.");
