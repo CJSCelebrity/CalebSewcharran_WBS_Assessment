@@ -11,4 +11,8 @@
       <Folder Include="Services\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WBS_Assessment.Application\WBS_Assessment.Application.csproj" />
+    </ItemGroup>
+
 </Project>
