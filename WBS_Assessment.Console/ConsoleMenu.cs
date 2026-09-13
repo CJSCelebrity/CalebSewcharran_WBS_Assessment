@@ -39,7 +39,9 @@ public class ConsoleMenu(
             System.Console.Write("Choose an option: ");
  
             var choice = System.Console.ReadLine();
- 
+            if (choice is null) 
+                return;
+            
             try
             {
                 switch (choice)
@@ -71,6 +73,10 @@ public class ConsoleMenu(
             catch (ArgumentException ex)
             {
                 System.Console.WriteLine($"Cannot do that: {ex.Message}");
+            }
+            catch (OperationCanceledException ex)
+            {
+                System.Console.WriteLine($"Operation cancelled: {ex.Message}");
             }
         }
     }
@@ -195,6 +201,11 @@ public class ConsoleMenu(
         while (true)
         {
             System.Console.Write($"{label} (1-{count}): ");
+            var input = System.Console.ReadLine();
+            
+            if (input is null)
+                throw new OperationCanceledException("Input stream closed.");
+            
             if (int.TryParse(System.Console.ReadLine(), out var choice)
                 && choice >= 1 && choice <= count)
                 return choice - 1;
@@ -208,10 +219,15 @@ public class ConsoleMenu(
         while (true)
         {
             System.Console.Write($"{label} (yyyy-MM-dd): ");
-            if (DateTime.TryParseExact(System.Console.ReadLine(), "yyyy-MM-dd",
+            var input = System.Console.ReadLine();
+
+            if (input is null)
+                throw new OperationCanceledException("Input stream closed.");
+
+            if (DateTime.TryParseExact(input, "yyyy-MM-dd",
                     CultureInfo.InvariantCulture, DateTimeStyles.None, out var date))
                 return date;
- 
+
             System.Console.WriteLine("Not a valid date. Please use yyyy-MM-dd.");
         }
     }
@@ -221,6 +237,11 @@ public class ConsoleMenu(
         while (true)
         {
             System.Console.Write($"{label}: ");
+            var input = System.Console.ReadLine();
+            
+            if (input is null)
+                throw new OperationCanceledException("Input stream closed.");
+            
             if (Guid.TryParse(System.Console.ReadLine(), out var id))
                 return id;
  
