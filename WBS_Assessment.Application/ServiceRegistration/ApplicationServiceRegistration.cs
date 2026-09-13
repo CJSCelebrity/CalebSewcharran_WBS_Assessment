@@ -10,13 +10,16 @@ public static class ApplicationServiceRegistration
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
+        services.AddValidatorsFromAssemblyContaining<CreateApartmentBookingValidator>();
+        services.AddValidatorsFromAssemblyContaining<CreateShowBookingValidator>();
+        services.AddValidatorsFromAssemblyContaining<CreateVehicleBookingValidator>();
+        
         services.AddSingleton<BookingGuard>();
         services.AddSingleton<ApartmentBookingService>();
         services.AddSingleton<VehicleBookingService>();
         services.AddSingleton<ShowBookingService>();
         services.AddSingleton<BookingManagementService>();
 
-        services.AddValidatorsFromAssemblyContaining<CreateApartmentBookingValidator>();
         return  services;
     }
 }
