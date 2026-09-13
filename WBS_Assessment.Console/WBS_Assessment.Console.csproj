@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WBS_Assessment.Application\WBS_Assessment.Application.csproj" />
+      <ProjectReference Include="..\WBS_Assessment.Infrastructure\WBS_Assessment.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -7,7 +7,7 @@ namespace WBS_Assessment.Infrastructure.ServiceRegistration;
 
 public static class InfrastructureServiceRegistration
 {
-    public static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddSingleton<IBookingRepository, InMemoryBookingRepository>();
         services.AddSingleton<IUserRepository, InMemoryUserRepository>();

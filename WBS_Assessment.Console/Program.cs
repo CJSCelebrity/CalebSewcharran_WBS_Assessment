@@ -1,5 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
-
+﻿
 /*
  * The following WBS assessment entails that
  * this be built for bookings - people going on holiday
@@ -21,3 +20,18 @@
  *
  *
  */
+
+using Microsoft.Extensions.DependencyInjection;
+using WBS_Assessment.Application.ServiceRegistration;
+using WBS_Assessment.Console;
+using WBS_Assessment.Infrastructure.ServiceRegistration;
+
+var services = new ServiceCollection()
+    .AddApplication()
+    .AddInfrastructure();
+
+services.AddSingleton<ConsoleMenu>();
+
+using var provider = services.BuildServiceProvider();
+
+provider.GetRequiredService<ConsoleMenu>().Run();
