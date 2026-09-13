@@ -2,11 +2,11 @@
 
 namespace WBS_Assessment.Core.Models;
 
-public abstract class Booking
+public abstract class Booking(Guid userId, Guid itemId)
 {
-    public Guid Id { get; init; }
-    public Guid UserId { get; init; }
-    public Guid ItemId { get; init; }
+    public Guid Id { get; init; } = Guid.NewGuid();
+    public Guid UserId { get; init; } = userId;
+    public Guid ItemId { get; init; } = itemId;
     public BookingStatus Status { get; private set; } = BookingStatus.Reserved;
     public DateTime? CancelledAt { get; private set; }
 
