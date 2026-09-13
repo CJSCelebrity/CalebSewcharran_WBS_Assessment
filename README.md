@@ -23,14 +23,6 @@ printed when a booking is made.
 
 Dates use `yyyy-MM-dd`.
 
-## Running the API
-
-```bash
-dotnet run --project WBS_Assessment.Api
-```
-
-Swagger UI is at `/swagger`.
-
 ## Structure
 
 | Project | Contains |
@@ -39,7 +31,6 @@ Swagger UI is at `/swagger`.
 | `Application` | Services, requests, validators, repository interfaces. |
 | `Infrastructure` | In-memory repositories and seed data. |
 | `Console` | Menu front end. |
-| `Api` | HTTP front end. |
 
 ## Screenshots of Application running in the console
 
