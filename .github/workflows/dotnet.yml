@@ -28,4 +28,4 @@ jobs:
         run: dotnet test --verbosity normal
 
       - name: Run application
-        run: dotnet run --project WBS_Assessment.Core/WBS_Assessment.Core.csproj
+        run: dotnet run --project WBS_Assessment.Console/WBS_Assessment.Console.csproj
