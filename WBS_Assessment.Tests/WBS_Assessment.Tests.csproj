@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
@@ -16,6 +16,18 @@
         <PackageReference Include="NUnit.Analyzers" Version="4.7.0"/>
         <PackageReference Include="NUnit3TestAdapter" Version="5.0.0"/>
         <PackageReference Include="Shouldly" Version="4.3.0" />
+    </ItemGroup>
+
+    <!-- Required to reference WBS_Assessment.Api, which builds with Microsoft.NET.Sdk.Web. -->
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\WBS_Assessment.Api\WBS_Assessment.Api.csproj" />
+        <ProjectReference Include="..\WBS_Assessment.Console\WBS_Assessment.Console.csproj" />
+        <ProjectReference Include="..\WBS_Assessment.Application\WBS_Assessment.Application.csproj" />
+        <ProjectReference Include="..\WBS_Assessment.Core\WBS_Assessment.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
