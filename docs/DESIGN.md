@@ -18,6 +18,10 @@ Where the brief was silent, I assumed:
 - Entities generate their own identifiers.
 - The console needs an interactive terminal and exits when input closes.
 
+The brief asks for a UI, and the console is it. The API is not part of the brief. It exists to demonstrate that the application core is independent of its delivery mechanism, and it can be removed without touching Core, Application or Infrastructure.
+
+I mentioned an API above as this was something that I made an automatic assumption on. Due to the scope of the assessment, I have decided to drop it.
+
 ## Items and bookings are separate things
 
 An apartment is not a booking, it is the thing that gets booked. My first model

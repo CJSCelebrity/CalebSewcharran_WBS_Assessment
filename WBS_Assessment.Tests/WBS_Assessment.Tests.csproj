@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
@@ -24,7 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\WBS_Assessment.Api\WBS_Assessment.Api.csproj" />
         <ProjectReference Include="..\WBS_Assessment.Console\WBS_Assessment.Console.csproj" />
         <ProjectReference Include="..\WBS_Assessment.Application\WBS_Assessment.Application.csproj" />
         <ProjectReference Include="..\WBS_Assessment.Core\WBS_Assessment.Core.csproj" />

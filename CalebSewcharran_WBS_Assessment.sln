@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBS_Assessment.Api", "WBS_Assessment.Api\WBS_Assessment.Api.csproj", "{E1A7DCF3-FA67-4996-BCEC-B0C618515A0B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBS_Assessment.Tests", "WBS_Assessment.Tests\WBS_Assessment.Tests.csproj", "{6F17347A-B91E-4C07-A26A-148C9B235FC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBS_Assessment.Infrastructure", "WBS_Assessment.Infrastructure\WBS_Assessment.Infrastructure.csproj", "{83C804F3-A49B-4A03-9AED-505F496EC0DC}"
@@ -18,10 +16,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1A7DCF3-FA67-4996-BCEC-B0C618515A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1A7DCF3-FA67-4996-BCEC-B0C618515A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1A7DCF3-FA67-4996-BCEC-B0C618515A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1A7DCF3-FA67-4996-BCEC-B0C618515A0B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F17347A-B91E-4C07-A26A-148C9B235FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F17347A-B91E-4C07-A26A-148C9B235FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F17347A-B91E-4C07-A26A-148C9B235FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
